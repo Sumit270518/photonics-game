@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photonics CAPTCHA Game</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+            gap: 10px; /* Adjust spacing as needed */
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto; /* Centers the grid */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1 class="level-heading">Level 2</h1>
+        <h1>Photonics Captcha Challenge</h1>
+        <h2>Select All Images with 530 nm Wavelength</h2>
+        <div class="image-grid" id="image-grid">
+            <!-- Placeholder for images (generated dynamically) -->
+
+        </div>
+        <br>
+        <button id="submit-btn">Submit</button>
+        <p id="result-message"></p>
+        <button id="next-level-button" style="display: none;">Go to Next Level</button>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
